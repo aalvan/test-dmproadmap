@@ -1,0 +1,21 @@
+<%# locals: expanded %>
+
+ <div class="accordion-item w-100">
+ <h2 class="accordion-header" id="headingTemplateStatistics">
+      <button href="#template_statistics" type="button"
+             class="accordion-button collapsed" data-bs-toggle="collapse" 
+             data-bs-target="#collapseTemplateStatistics" aria-expanded="false" aria-controls="collapseTemplateStatistics">
+         <%= _('Statistics on your Templates') %>
+      </button>
+  </h2>
+
+  <div id="collapseTemplateStatistics"
+       class="card collapse"
+       role="tabpanel" 
+       aria-labelledby="headingTemplateStatistics"
+       data-bs-parent="#usage-accordion">
+    <div class="accordion-body card card-body">
+      <%= render partial: 'usage/template_statistics' %>
+    </div>
+  </div>
+</div>

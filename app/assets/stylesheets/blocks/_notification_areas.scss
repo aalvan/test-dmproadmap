@@ -1,0 +1,18 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+.notification-area--floating {
+  position: fixed;
+  top: 4rem;
+  z-index: 1000;
+  // Take up width of the page on mobile
+  right: 5vw;
+  width: 90vw;
+
+  // Non-mobile settings
+  @include media-breakpoint-up(sm) {
+    right: 4rem;
+    width: 300px;
+  }
+}

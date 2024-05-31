@@ -1,0 +1,14 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+#footer-navbar {
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius:0px;
+  z-index: 1;
+  ul {
+    padding-right: calc($grid-gutter-width / 2);
+  }
+}

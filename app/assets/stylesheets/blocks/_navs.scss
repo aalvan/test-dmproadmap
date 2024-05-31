@@ -1,0 +1,76 @@
+@use '../variables/colours' as *;
+// Native HTML5 nav support
+
+/* Hide sub-menus by default */
+nav ul ul {
+  display: none;
+}
+/* Display sub-menu when user hovers over item */
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+
+
+// Overrides Bootstrap 
+
+/* nav-tabs and nav-pills styling */
+
+.nav-tabs, .nav-pills {
+  background-color: $color-primary-background;
+  color: $color-primary-text;
+  border-radius: 0px;
+}
+
+.nav-tabs .nav-item .nav-link, .nav-pills .nav-item .nav-link {
+  border-radius: 0px;
+}
+
+.nav-link {
+  color: $color-primary-text;
+  border-radius: 0px;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover {
+  background-color: $color-secondary-background;
+  color: $color-secondary-text;
+  border: 1px solid $color-border-default;
+  border-bottom-color: transparent; /* Only nav-tabs have a transparent border-bottom */
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:focus.active,
+.nav-pills .nav-link:hover.active {
+  background-color: $color-secondary-background;
+  color: $color-secondary-text;
+  border: 1px solid $color-border-default;
+}
+
+.nav-pills li:first-child .nav-link:hover,
+.nav-pills li:first-child .nav-link:focus,
+.nav-pills li:first-child .nav-link.active,
+.nav-pills li:first-child .nav-link.active:focus,
+.nav-pills li:first-child .nav-link.active:hover,
+.nav-pills li:last-child .nav-link:hover,
+.nav-pills li:last-child .nav-link:focus,
+.nav-pills li:last-child .nav-link.active,
+.nav-pills li:last-child .nav-link.active:focus,
+.nav-pills li:last-child .nav-link.active:hover {
+  border-right: 0px;
+  background-color: $color-secondary-background;
+  color: $color-secondary-text;
+}
+

@@ -1,0 +1,75 @@
+/*
+  Colors
+  - to be used as utilities within this file to define text+bg colors
+*/
+$color-black: #000;
+$color-white: #FFF;
+$color-red: #b94a48;
+$color-green: #4c8d3f;
+$color-grey: #4F5253;
+$color-grey-darkest: #222;
+$color-grey-darker: #333;
+$color-grey-light: #777;
+$color-grey-lighter: #999;
+$color-blue: #337ab7;
+$color-blue-alice-darkest: #107896;
+$color-muted: #CCC;
+
+
+
+/*
+  Variables to define look and feel
+*/
+// Backgrounds
+$color-primary-background: $color-grey;
+$color-secondary-background: $color-white;
+$color-muted-background: $color-muted;
+$color-navbar-background: $color-grey-darkest;
+$color-navbar-background-active: shade-color($color-navbar-background, 10%) ;
+$color-footer-background: $color-navbar-background;
+$color-tooltip-background: $color-primary-background;
+$color-icon-bar-background: $color-white;
+
+
+// Text
+$color-primary-text: $color-white;
+$color-secondary-text: $color-grey;
+$color-heading-text: $color-black;
+$color-navbar-text: $color-grey-light;
+$color-navbar-text-hover: $color-white;
+$color-navbar-text-disabled: $color-grey-darker;
+$color-link-text: $color-blue-alice-darkest;
+$color-navbar-link-text: tint-color($color-navbar-text, 15%);
+$color-org-navbar-links: $color-grey-light;
+$color-org-navbar-links-hover: $color-grey-darker;
+$color-dropdown-inverse-text: $color-grey-lighter;
+$color-dropdown-inverse-text-hover: $color-white;
+// $color-footer-links:;
+// $color-footer-links-hover:;
+// $color-tooltip-text:;
+$color-text-red: $color-red;
+$color-text-grey: $color-grey;
+$color-text-black: $color-black;
+
+// Borders colors
+$color-border-default: $color-grey;
+$color-border-light: #ddd;
+$color-dropdown-inverse-border: #080808;
+$color-navbar-border: shade-color($color-navbar-background, 10%);
+
+// Shadow colors
+$color-shadow-dark: $color-black;
+
+// FontAwesome Colors
+$color-fa: $color-grey;
+
+// Focus colors
+$color-focus-outline: $color-blue-alice-darkest;
+
+// Accordion colors
+$color-accordion-button: $color-primary-text;
+$color-accordion-button-icon: $color-primary-text;
+$color-accordion-button-bg: $color-primary-background;
+$color-accordion-button-active-bg:  shade-color($color-accordion-button-bg, 30%);
+
+

@@ -1,0 +1,26 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+/* label stlying */
+label {
+  font-weight: 700;
+}
+
+.label {
+  font-size: 85%;
+  border-radius: 0px;
+}
+
+/* RADIO BUTTONS */
+.radio label {
+  margin-right: calc($grid-gutter-width / 2);
+}
+
+.radio label, .checkbox label {
+  font-weight: 400;
+}
+
+/* Remove mandatory * from check_box_tag in Admin search */
+.form-inline span.red {
+  visibility: collapse;
+}
